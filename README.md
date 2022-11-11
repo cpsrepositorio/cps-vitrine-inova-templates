@@ -2,6 +2,8 @@
 
 > Conjunto de _templates_ de _layout_ aplicando o CPS Design System à interface da Vitrine Inova.
 
+![image](https://user-images.githubusercontent.com/242274/201371763-1a806b3e-497e-4cec-afe7-e944c387e197.png)
+
 **Demonstração:** https://cpsrepositorio.github.io/cps-vitrine-inova-templates/
 
 ## Introdução
