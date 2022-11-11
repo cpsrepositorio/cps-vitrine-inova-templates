@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Principal - Vitrine Inova</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles/index.6a3108c1.css" />
+    <script type="module" src="/scripts/index.79c62cc2.js" defer=""></script>
+    <script src="/scripts/index.dbeccd7f.js" defer="" nomodule=""></script>
+
+    <link rel="stylesheet" href="/styles/principal.ea33a3e9.css" />
+    <script type="module" src="/scripts/principal.b2ab88ca.js"></script>
+    <script src="/scripts/principal.0319d055.js" nomodule="" defer=""></script>
+  </head>
+
+  <body class="bg-picture font-size-body">
+    <header class="app-header bg-solid-base">
+      <div class="max-width content">
+        <div class="start">
+          <img
+            src="https://inova.cps.sp.gov.br/wp-content/uploads/sites/15/2022/10/inova.png"
+            alt="Inova"
+            style="height: 64px"
+          />
+        </div>
+        <div class="middle">Cabeçalho do Site</div>
+        <div class="end">
+          <button
+            id="color-scheme"
+            data-appearance="{{ appearance }}"
+            data-size="xs"
+            title="Modo escuro"
+          >
+            <svg
+              viewBox="0 0 20 20"
+              role="presentation"
+              aria-hidden=""
+              class="sunny hidden"
+            >
+              <path
+                d="M10 2a.5.5 0 01.5.5v1a.5.5 0 01-1 0v-1A.5.5 0 0110 2zm0 12a4 4 0 100-8 4 4 0 000 8zm0-1a3 3 0 110-6 3 3 0 010 6zm7.5-2.5a.5.5 0 000-1h-1a.5.5 0 000 1h1zM10 16a.5.5 0 01.5.5v1a.5.5 0 01-1 0v-1a.5.5 0 01.5-.5zm-6.5-5.5a.5.5 0 000-1H2.463a.5.5 0 000 1H3.5zm.646-6.354a.5.5 0 01.708 0l1 1a.5.5 0 11-.708.708l-1-1a.5.5 0 010-.708zm.708 11.708a.5.5 0 01-.708-.708l1-1a.5.5 0 01.708.708l-1 1zm11-11.708a.5.5 0 00-.708 0l-1 1a.5.5 0 00.708.708l1-1a.5.5 0 000-.708zm-.708 11.708a.5.5 0 00.708-.708l-1-1a.5.5 0 00-.708.708l1 1z"
+                fill="currentColor"
+              ></path>
+            </svg>
+
+            <svg
+              viewBox="0 0 20 20"
+              role="presentation"
+              aria-hidden=""
+              class="moon"
+            >
+              <path
+                d="M15.493 13.498a6.981 6.981 0 01-11.483.892c2.831-1.088 4.558-2.42 5.593-4.397 1.048-2 1.337-4.16.76-6.909a6.981 6.981 0 015.13 10.414zM5.457 16.919A7.981 7.981 0 109.88 2.036a.599.599 0 00-.614.74c.688 2.819.434 4.876-.55 6.753-.934 1.784-2.544 3.031-5.55 4.107a.598.598 0 00-.292.903 7.951 7.951 0 002.582 2.38z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <nav class="bg-acrylic-accent">
+      <div class="max-width m-auto">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 234 68"
+            class="logo-vitrine-inova"
+          >
+            <title>Vitrine Inova</title>
+            <path
+              d="M65.907 64.805V42.4h2.605v22.405h-2.605zm19.876 0V53.94c0-1.37-.311-2.39-.935-3.065-.623-.675-1.599-1.012-2.927-1.012-1.757 0-3.044.476-3.862 1.426-.817.95-1.225 2.518-1.225 4.704v8.812H74.29V48.009h2.069l.413 2.299h.123c.52-.828 1.251-1.466 2.191-1.916.94-.46 1.987-.69 3.142-.69 2.023 0 3.545.491 4.567 1.472 1.021.97 1.532 2.528 1.532 4.674v10.957h-2.544zm22.282-8.413c0 2.738-.69 4.878-2.069 6.42-1.379 1.533-3.285 2.3-5.716 2.3-1.502 0-2.835-.353-4-1.058-1.164-.705-2.063-1.717-2.697-3.034-.633-1.318-.95-2.86-.95-4.628 0-2.738.685-4.868 2.054-6.39 1.369-1.533 3.269-2.3 5.7-2.3 2.35 0 4.215.782 5.594 2.345 1.389 1.563 2.084 3.678 2.084 6.345zm-12.796 0c0 2.145.429 3.78 1.287 4.903.858 1.124 2.12 1.686 3.785 1.686 1.666 0 2.927-.557 3.785-1.67.869-1.124 1.303-2.764 1.303-4.92 0-2.135-.434-3.754-1.303-4.857-.858-1.114-2.13-1.67-3.815-1.67-1.666 0-2.922.546-3.77 1.64-.848 1.092-1.272 2.722-1.272 4.888zm20.948 8.413l-6.375-16.796h2.728l3.617 9.961c.817 2.33 1.297 3.841 1.44 4.536h.123c.112-.541.465-1.66 1.057-3.356.603-1.706 1.947-5.42 4.031-11.14h2.727l-6.375 16.795h-2.973zm22.374 0l-.506-2.39h-.122c-.838 1.051-1.676 1.767-2.513 2.145-.828.367-1.865.551-3.111.551-1.665 0-2.973-.429-3.923-1.287-.94-.858-1.41-2.079-1.41-3.663 0-3.391 2.712-5.169 8.137-5.333l2.851-.091v-1.043c0-1.317-.287-2.288-.859-2.911-.562-.633-1.466-.95-2.712-.95-1.4 0-2.983.429-4.751 1.287l-.781-1.946c.827-.45 1.731-.802 2.712-1.058a11.871 11.871 0 012.973-.383c2.003 0 3.484.445 4.444 1.334.971.888 1.456 2.313 1.456 4.275v11.463h-1.885zm-5.746-1.793c1.583 0 2.824-.434 3.723-1.303.91-.868 1.364-2.084 1.364-3.647v-1.517l-2.544.107c-2.022.072-3.483.388-4.382.95-.889.552-1.334 1.415-1.334 2.59 0 .92.276 1.62.828 2.1.562.48 1.343.72 2.345.72z"
+              class="subtitle"
+            ></path>
+            <path
+              d="M12.864 37.572c-.154 0-.46-.153-.921-.46l-8.17-31.3L.204 4.66V2.474H13.38v2.474L9.411 6.1l4.43 17.78c.384 1.61.94 4.276 1.67 7.997h.632l2.072-8.746c2.301-9.59 3.644-15.266 4.027-17.03L18.1 4.947V2.474h12.716v2.187l-3.567 1.15-8.055 30.956a110.89 110.89 0 01-3.74.518c-1.228.153-2.09.25-2.59.288zm24.785.116c-.192 0-.633-.307-1.324-.921-.652-.614-.978-1.017-.978-1.208V14.557l-2.014-.633v-2.129c2.916-.575 4.546-.863 4.89-.863.231 0 .672.288 1.324.863.652.576.979.998.979 1.266v21.002l2.013.575v2.129c-2.915.614-4.545.92-4.89.92zM35.002.288L39.432 0l.863 1.266-.287 5.006h-4.603L35.002.288zm17.695 37.4c-.422 0-.978-.269-1.669-.806a11.129 11.129 0 01-1.84-1.956c-.5-.73-.749-1.305-.749-1.726V14.442h-3.682v-1.726l3.682-1.841 3.222-3.913c.346 0 1.017.269 2.014.806v3.625h5.581v3.337h-5.58v15.938c0 1.189.095 1.995.287 2.416.192.422.556.633 1.093.633l4.718.116v2.761c-1.112.23-2.474.46-4.085.69-1.611.27-2.608.404-2.992.404zm13.825 0c-.192 0-.575-.269-1.15-.806-.538-.537-.806-.901-.806-1.093V14.615l-2.014-.69v-2.13c2.915-.575 4.545-.863 4.89-.863.192 0 .614.307 1.266.92.69.615 1.036.998 1.036 1.152l-.115 2.014c2.762-2.916 4.258-4.373 4.488-4.373.614 0 1.899.306 3.855.92.115.269.192.576.23.92.077.346.115.634.115.864 0 .23-.23.767-.69 1.611-.422.844-.71 1.304-.863 1.38-1.266-.498-2.283-.747-3.05-.747-.498 0-1.803.614-3.912 1.841v16.11l2.934.864v2.359c-3.797.614-5.869.92-6.214.92zm18.158 0c-.192 0-.634-.307-1.324-.921-.652-.614-.978-1.017-.978-1.208V14.557l-2.014-.633v-2.129c2.915-.575 4.545-.863 4.89-.863.23 0 .672.288 1.324.863.652.576.978.998.978 1.266v21.002l2.014.575v2.129c-2.915.614-4.545.92-4.89.92zM82.032.288L86.463 0l.863 1.266-.288 5.006h-4.603L82.033.288zm15.394 37.4c-.192 0-.575-.269-1.15-.806-.537-.537-.806-.901-.806-1.093V14.787l-2.014-.863v-2.129c3.146-.575 4.89-.863 5.236-.863.192 0 .537.269 1.036.806.537.498.805.844.805 1.036v2.186a253.72 253.72 0 013.683-2.647c1.342-.92 2.09-1.38 2.244-1.38 2.762 0 4.833.728 6.214 2.186 1.381 1.419 2.071 3.912 2.071 7.48v13.176l2.014.863v2.129c-3.184.614-4.929.92-5.236.92-.192 0-.575-.268-1.151-.805-.575-.537-.863-.901-.863-1.093v-15.19c0-2.378-.345-3.875-1.035-4.488-.691-.614-1.458-.92-2.302-.92-.422 0-1.381.344-2.877 1.035-1.457.652-2.32 1.036-2.589 1.15v16.399l1.956.863v2.129c-3.145.614-4.89.92-5.236.92zm33.064 0c-1.65 0-3.203-.442-4.661-1.324-1.458-.882-2.647-2.244-3.567-4.085-.883-1.841-1.324-4.104-1.324-6.79 0-1.918.115-3.682.346-5.293.268-1.65.613-2.858 1.035-3.625.384-.575 1.17-1.343 2.359-2.302a35.116 35.116 0 013.683-2.531c1.266-.729 2.129-1.093 2.589-1.093 2.071 0 3.74.326 5.006.978 1.304.652 2.301 1.899 2.992 3.74.729 1.84 1.093 4.488 1.093 7.94l-13.579 1.15c0 2.302.307 4.143.921 5.524.613 1.343 1.323 2.283 2.129 2.82.843.537 1.611.805 2.301.805l2.704-.115 4.719-.172v2.359c-1.42.46-3.108.92-5.064 1.38-1.918.423-3.145.634-3.682.634zm3.97-16.629c0-2.302-.307-4.028-.921-5.178-.614-1.19-1.63-1.784-3.049-1.784-.844 0-1.573.134-2.187.403-.498.23-.92 1.112-1.266 2.646-.306 1.535-.46 3.184-.46 4.949l7.883-1.036z"
+              class="title"
+            ></path>
+            <path
+              d="M195.879 8.768a5.17 5.17 0 011.344-1.295h-8.59a2.1 2.1 0 100 4.203h6.299a5.036 5.036 0 01.947-2.908zm-9.347 57.13A2.1 2.1 0 00188.633 68h9.247a2.102 2.102 0 100-4.203h-9.247a2.101 2.101 0 00-2.101 2.101zM162.993 42.36a2.102 2.102 0 004.203 0v-9.247a2.101 2.101 0 10-4.203 0v9.247zm11.349-34.887a2.102 2.102 0 110 4.203h-.841a6.305 6.305 0 00-6.305 6.305v.84a2.101 2.101 0 11-4.203 0v-.84c0-5.804 4.705-10.508 10.508-10.508h.841zm2.102 58.425A2.102 2.102 0 01174.342 68h-.841c-5.803 0-10.508-4.705-10.508-10.508v-.84a2.102 2.102 0 014.203 0v.84a6.305 6.305 0 006.305 6.305h.841c1.161 0 2.102.94 2.102 2.101zm33.626 0c0 1.161.941 2.102 2.102 2.102h.84c5.804 0 10.508-4.705 10.508-10.508v-.84a2.101 2.101 0 10-4.203 0v.84a6.305 6.305 0 01-6.305 6.305h-.84a2.102 2.102 0 00-2.102 2.101z"
+              class="dashes"
+            ></path>
+            <path
+              d="M207.551 19.518a9 9 0 012.175 3.54l1.423 4.372a1.726 1.726 0 003.217.107.99.99 0 00.042-.107l1.422-4.372a9.018 9.018 0 015.711-5.706l4.375-1.421a1.723 1.723 0 001.154-1.629 1.723 1.723 0 00-1.154-1.629l-.087-.021-4.376-1.421a9.014 9.014 0 01-5.71-5.706l-1.422-4.373a1.728 1.728 0 00-3.26 0l-1.422 4.373-.036.108a9.01 9.01 0 01-5.587 5.598l-4.375 1.42a1.722 1.722 0 00-1.154 1.63 1.723 1.723 0 001.154 1.628l4.375 1.42a9.019 9.019 0 013.535 2.189zm23.27 11.647l2.317.753.046.011a.916.916 0 01.443 1.39.916.916 0 01-.443.335l-2.316.752a4.777 4.777 0 00-3.023 3.02l-.753 2.315a.802.802 0 01-.027.067l.001.015a.923.923 0 01-.837.545.916.916 0 01-.863-.61l-.753-2.315a4.766 4.766 0 00-2.282-2.707l-.005-.026a4.75 4.75 0 00-.736-.316l-2.316-.752a.918.918 0 01-.611-.862.916.916 0 01.611-.862l2.316-.753a4.768 4.768 0 002.977-3.02l.753-2.315a.917.917 0 011.726 0l.752 2.315a4.776 4.776 0 003.023 3.02z"
+              class="stars"
+            ></path>
+          </svg>
+        </div>
+
+        <div class="fields">
+          <p>
+            Navegue por todos os projetos, ou filtre de acordo com suas
+            preferências.
+          </p>
+
+          <form novalidate="">
+            <label for="ano" class="field">
+              <span>Ano</span>
+              <select id="ano">
+                <option value="">Todos</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+              </select>
+            </label>
+
+            <label for="semestre" class="field">
+              <span>Semestre</span>
+              <select id="semestre">
+                <option value="">Todos</option>
+                <option value="first">1º semestre</option>
+                <option value="second">2º semestre</option>
+              </select>
+            </label>
+
+            <label for="busca" class="field search">
+              <span>Busca textual</span>
+              <input
+                id="busca"
+                type="busca"
+                placeholder="Critérios de busca"
+                autocomplete="off"
+              />
+            </label>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-width categories">
+      <section class="category">
+        <header>
+          <h2 class="font-size-title font-bold">Destaques</h2>
+          <a href="#">Ver todos</a>
+        </header>
+
+        <div class="cards large">
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+        </div>
+      </section>
+
+      <section class="category">
+        <header>
+          <h2 class="font-size-title font-bold">
+            Projetos de inclusão digital e inovação
+          </h2>
+        </header>
+
+        <div class="cards">
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+        </div>
+      </section>
+
+      <section class="category">
+        <header>
+          <h2 class="font-size-title font-bold">
+            Projetos voltados ao meio ambiente
+          </h2>
+        </header>
+
+        <div class="cards">
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+        </div>
+      </section>
+
+      <section class="category">
+        <header>
+          <h2 class="font-size-title font-bold">
+            Projetos para saúde e bem-estar
+          </h2>
+        </header>
+
+        <div class="cards">
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+        </div>
+      </section>
+
+      <section class="category">
+        <header>
+          <h2 class="font-size-title font-bold">Outra categoria de exemplo</h2>
+        </header>
+
+        <div class="cards">
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+        </div>
+      </section>
+    </main>
+
+    <header class="app-footer bg-solid-base">
+      <div class="max-width content">
+        <div class="middle">Rodapé do Site</div>
+      </div>
+    </header>
+  </body>
+</html>
