@@ -1,0 +1,84 @@
+:root {
+  --texture-noise: url('/src/images/texture-noise.png');
+}
+
+.bg-solid-base,
+.bg-solid-secondary,
+.bg-solid-tertiary,
+.bg-solid-quarternary,
+.bg-mica,
+.bg-acrylic,
+.bg-acrylic-accent {
+  border: solid 1px #0000000f;
+
+  @nest .dark & {
+    border: solid 1px #0000001a;
+  }
+}
+
+.bg-solid-base {
+  background: var(--background-solid-base);
+}
+
+.bg-solid-secondary {
+  background: var(--background-solid-secondary);
+}
+
+.bg-solid-tertiary {
+  background: var(--background-solid-tertiary);
+}
+
+.bg-solid-quarternary {
+  background: var(--background-solid-quarternary);
+}
+
+.bg-mica {
+  backdrop-filter: blur(40px);
+  background: #f6f6f680;
+
+  @nest .dark & {
+    backdrop-filter: blur(60px);
+    background: #ffffff08;
+  }
+}
+
+.bg-acrylic {
+  backdrop-filter: blur(10px);
+  background: #f3f3f3cc var(--texture-noise) repeat fixed;
+
+  @nest .dark & {
+    backdrop-filter: blur(15px);
+    background: #202020db var(--texture-noise) repeat fixed;
+  }
+}
+
+.bg-acrylic-accent {
+  color: var(--text-inverted-primary);
+  backdrop-filter: blur(3px);
+  background: #09323ccc var(--texture-noise) repeat fixed;
+
+  @nest .dark & {
+    color: var(--text-primary);
+    backdrop-filter: blur(5px);
+    background: #09323cdb var(--texture-noise) repeat fixed;
+  }
+}
+
+.bg-picture {
+  position: relative;
+  background: url('/src/images/cps-internal-photo.jpg') center/cover fixed;
+
+  &::before {
+    position: fixed;
+    content: '';
+    inset: 0 0 0 0;
+    z-index: -1;
+    backdrop-filter: blur(30px);
+    background: #ffffffb3 var(--texture-noise) repeat fixed;
+  }
+
+  @nest .dark &::before {
+    backdrop-filter: blur(35px);
+    background: #2c2c2ce6 var(--texture-noise) repeat fixed;
+  }
+}

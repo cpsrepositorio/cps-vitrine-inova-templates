@@ -1,0 +1,101 @@
+.logo-vitrine-inova,
+.logo-cps {
+  &[data-size='xs'] {
+    height: 2.25rem;
+  }
+
+  &[data-size='sm'] {
+    height: 2.625rem;
+  }
+
+  &[data-size='xs-to-sm'] {
+    height: 2.25rem;
+
+    @media (width >= 768px) {
+      height: 2.625rem;
+    }
+  }
+
+  &:not([data-size]),
+  &[data-size='md'] {
+    height: 4.25rem;
+  }
+
+  &[data-size='lg'] {
+    height: 5rem;
+  }
+
+  &[data-touchable] {
+    transition-property: var(--transition-property);
+    transition-timing-function: var(--transition-timing-function);
+    transition-duration: var(--transition-duration);
+
+    &:hover {
+      filter: brightness(0.6);
+
+      @nest .dark & {
+        filter: brightness(1.4);
+      }
+    }
+  }
+}
+
+.logo-vitrine-inova {
+  & .title {
+    fill: currentColor;
+    opacity: 98%;
+  }
+
+  & .subtitle,
+  & .stars {
+    fill: currentColor;
+    opacity: 70%;
+
+    @nest .dark & {
+      opacity: 63%;
+    }
+  }
+
+  & .dashes {
+    fill: currentColor;
+    opacity: 30%;
+
+    @nest .dark & {
+      opacity: 23%;
+    }
+  }
+}
+
+.logo-cps {
+  & .icon {
+    fill: var(--brand-base);
+  }
+
+  & .title {
+    fill: var(--text-secondary);
+  }
+
+  @nest .dark & .icon {
+    fill: var(--brand-light-1);
+  }
+
+  &[data-simple] .title {
+    display: none;
+  }
+
+  &[data-monochromatic] {
+    & .icon {
+      fill: currentColor;
+      opacity: 98%;
+    }
+
+    & .title {
+      fill: currentColor;
+      opacity: 70%;
+
+      @nest .dark & {
+        opacity: 63%;
+      }
+    }
+  }
+}

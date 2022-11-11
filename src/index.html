@@ -1,0 +1,146 @@
+<html lang="pt-BR">
+  <head>
+    <include src="templates/head.html">
+      { "title": "Principal - Vitrine Inova" }
+    </include>
+
+    <link rel="stylesheet" href="styles/principal.css" />
+    <script type="module" src="scripts/principal.js"></script>
+  </head>
+
+  <body class="bg-picture font-size-body">
+    <include src="templates/header.html"></include>
+
+    <nav class="bg-acrylic-accent">
+      <div class="max-width m-auto">
+        <div>
+          <inline-svg src="images/logo-vitrine-inova.svg"></inline-svg>
+        </div>
+
+        <div class="fields">
+          <p>
+            Navegue por todos os projetos, ou filtre de acordo com suas
+            preferências.
+          </p>
+
+          <form novalidate>
+            <label for="ano" class="field">
+              <span>Ano</span>
+              <select id="ano">
+                <option value="">Todos</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+              </select>
+            </label>
+
+            <label for="semestre" class="field">
+              <span>Semestre</span>
+              <select id="semestre">
+                <option value="">Todos</option>
+                <option value="first">1º semestre</option>
+                <option value="second">2º semestre</option>
+              </select>
+            </label>
+
+            <label for="busca" class="field search">
+              <span>Busca textual</span>
+              <input
+                id="busca"
+                type="busca"
+                placeholder="Critérios de busca"
+                autocomplete="off"
+              />
+            </label>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-width categories">
+      <section class="category">
+        <header>
+          <h2 class="font-size-title font-bold">Destaques</h2>
+          <a href="#">Ver todos</a>
+        </header>
+
+        <div class="cards large">
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+        </div>
+      </section>
+
+      <section class="category">
+        <header>
+          <h2 class="font-size-title font-bold">
+            Projetos de inclusão digital e inovação
+          </h2>
+        </header>
+
+        <div class="cards">
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+        </div>
+      </section>
+
+      <section class="category">
+        <header>
+          <h2 class="font-size-title font-bold">
+            Projetos voltados ao meio ambiente
+          </h2>
+        </header>
+
+        <div class="cards">
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+        </div>
+      </section>
+
+      <section class="category">
+        <header>
+          <h2 class="font-size-title font-bold">
+            Projetos para saúde e bem-estar
+          </h2>
+        </header>
+
+        <div class="cards">
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+        </div>
+      </section>
+
+      <section class="category">
+        <header>
+          <h2 class="font-size-title font-bold">Outra categoria de exemplo</h2>
+        </header>
+
+        <div class="cards">
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+          <div class="card">Item</div>
+        </div>
+      </section>
+    </main>
+
+    <include src="templates/footer.html"></include>
+  </body>
+</html>

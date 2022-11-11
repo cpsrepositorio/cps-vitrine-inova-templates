@@ -1,0 +1,48 @@
+.icon,
+svg[role='presentation'] {
+  &[data-size='sm'] {
+    height: 0.75rem;
+  }
+
+  &:not([data-size]),
+  &[data-size='md'] {
+    height: 1rem;
+  }
+
+  &[data-size='lg'] {
+    height: 1.25rem;
+  }
+
+  &[data-size='xl'] {
+    height: 1.5rem;
+  }
+
+  &.attention {
+    color: var(--text-attention);
+  }
+
+  &.caution {
+    color: var(--text-caution);
+  }
+
+  &.success {
+    color: var(--text-success);
+  }
+
+  &.critical {
+    color: var(--text-critical);
+  }
+
+  &.attention,
+  &.caution,
+  &.success,
+  &.critical {
+    & rect {
+      fill: currentColor;
+    }
+
+    & path {
+      fill: var(--text-inverted-primary);
+    }
+  }
+}

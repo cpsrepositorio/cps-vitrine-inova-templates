@@ -1,0 +1,19 @@
+.shadow-sm {
+  box-shadow: var(--shadow-card-rest);
+}
+
+.shadow-md {
+  box-shadow: var(--shadow-card-hover);
+}
+
+.shadow-lg {
+  box-shadow: var(--shadow-tooltip);
+}
+
+.shadow-xl {
+  box-shadow: var(--shadow-flyout);
+}
+
+.shadow-2xl {
+  box-shadow: var(--shadow-dialog);
+}
