@@ -1,0 +1,76 @@
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.375rem;
+  row-gap: 0.125rem;
+
+  &.statuses {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  white-space: nowrap;
+  color: var(--text-primary);
+  font-size: var(--font-size-caption);
+  line-height: var(--leading-caption);
+  border-radius: var(--rounded-md);
+  padding: 0.25rem 0.5rem;
+  background: #0000000f;
+  border: 1px solid transparent;
+
+  @nest .dark & {
+    background: #0000002f;
+  }
+
+  &[data-type='none'] {
+    & > :is(svg, span):not(.none) {
+      display: none;
+    }
+  }
+
+  &[data-type='contribution'] {
+    & > :is(svg, span):not(.contribution) {
+      display: none;
+    }
+  }
+
+  &[data-type='angel'] {
+    & > :is(svg, span):not(.angel) {
+      display: none;
+    }
+  }
+
+  &[data-type='incubator'] {
+    & > :is(svg, span):not(.incubator) {
+      display: none;
+    }
+  }
+
+  &[data-type='tech-park'] {
+    & > :is(svg, span):not(.tech-park) {
+      display: none;
+    }
+  }
+
+  & svg {
+    color: var(--text-secondary);
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  &.status {
+    padding: 0.125rem 0.375rem;
+    background: #00000006;
+    border-color: #0000000f;
+
+    @nest .dark & {
+      background: #00000010;
+      border-color: #0000002f;
+    }
+  }
+}
